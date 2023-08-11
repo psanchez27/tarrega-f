@@ -1,0 +1,31 @@
+/*
+Theme name: Tarrega
+Author: Pablo Sanchez
+Author URI: https://pablosanchezdeveloper.com/
+Description: WordPress theme that anyone can use. Whether a new WP user or an expierienced user, Tarrega is for you.
+Version: 1.0
+Tags: Clean, Simple
+Requires at least: 6.0
+Tested up to 6.3
+Requires PHP: 7.2
+*/
+
+
+
+/* Utilities */
+:root{
+  --primary-color: #fc5185;
+  --secondary-color: #364f6b;
+  --light-backgounrd-color: #fff;
+  --dark-backgorund-color: #222;
+  --light-text-color: #fff;
+  --dark-text-color: #000;
+  --extra-color-1: #43dde6;
+  --extra-color-2: #f0f0f0;
+}
+
+*{
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
