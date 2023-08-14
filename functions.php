@@ -6,3 +6,27 @@ function tarrega_enqueue_scripts(){
 }
 
 add_action( 'wp_enqueue_scripts', 'tarrega_enqueue_scripts' );
+
+
+
+// config function
+function tarrega_config(){
+  // Register nav menus
+  register_nav_menus(
+    array(
+      'tarrega_primary_menu' => 'Main Menu',
+      'tarrega_footer_menu' => 'Footer Menu'
+    )
+  );
+
+
+  // Add theme support
+  add_theme_support( 'custom-logo' );
+  add_theme_support( 'post-thumnails' );
+  add_theme_support( 'title-tag' );
+
+  //Block editor support
+  add_theme_support( 'responsive-embeds' );
+}
+
+add_action( 'after_setup_theme', 'tarrega_config' );
