@@ -1,5 +1,9 @@
 <?php
 
+//Load theme customizer
+require get_template_directory() . '/inc/customizer.php';
+
+
 function tarrega_enqueue_scripts(){
   //load frontend styles
   wp_enqueue_style( 'tarrega-frontend-styles', get_stylesheet_uri(), array(), wp_get_theme()->get( 'version' ), 'all' );

@@ -3,7 +3,7 @@
 <!-- Footer -->
 <footer>
   <div class="footer-main">
-    <div class="copyright">Copyright 2023 - Tarrega - All Rights Reserved.</div>
+    <p class="copyright"><?php echo get_theme_mod( 'set_copyright', 'Powered by Pablo!!' ); ?></p>
     <div class="footer-menu">
       <nav>
         <?php
