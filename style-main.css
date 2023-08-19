@@ -1,0 +1,70 @@
+/* Utilities */
+:root{
+  --primary-color: #A1CCD1;
+  --secondary-color: #7C9D96;
+  --light-backgounrd-color: #fff;
+  --dark-backgorund-color: #222;
+  --light-text-color: #fff;
+  --dark-text-color: #000;
+  --extra-color-1: #E9B384;
+  --extra-color-2: #F4F2DE;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Header */
+.header-main{
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  transition: all .6s ease-in-out;
+  padding: 1rem 5vw;
+}
+.branding{
+  font-size: 3em;
+}
+.branding a{
+  color: #fff;
+  text-decoration: none;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+}
+nav ul li{
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+/* Mobile Menu */
+.mobile-menu-toggle{
+  display: none;
+}
+
+
+
+/* Footer */
+footer{
+  background-color: #000;
+  color: #fff
+}
+.footer-main{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+
+
