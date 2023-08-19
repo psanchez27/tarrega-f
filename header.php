@@ -17,7 +17,7 @@
         if ( has_custom_logo() ) :
           the_custom_logo();
         else: ?>
-          <a href="<?php esc_url( home_url( '/' ) ); ?>">
+          <a href="<?php esc_url( bloginfo( 'url' ) ); ?>">
             <div class="site-title"><?php bloginfo( 'title' ); ?></div>
           </a>
         <?php endif; ?>
