@@ -5,8 +5,10 @@ require get_template_directory() . '/inc/customizer.php';
 
 
 function tarrega_enqueue_scripts(){
-  //load frontend styles
-  wp_enqueue_style( 'tarrega-frontend-styles', get_stylesheet_uri(), array(), wp_get_theme()->get( 'version' ), 'all' );
+  //load info stylesheet (style.css in root)
+  wp_enqueue_style( 'tarrega-thee-info', get_stylesheet_uri(), array(), wp_get_theme()->get( 'version' ), 'all' );
+  //load nain styles stysheet
+  wp_enqueue_style( 'tarrega-main-styles', get_template_directory_uri() . '/style-main.css', array(), wp_get_theme()->get( 'version' ), 'all' );
 }
 
 add_action( 'wp_enqueue_scripts', 'tarrega_enqueue_scripts' );
