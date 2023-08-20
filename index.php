@@ -2,6 +2,9 @@
 
 <main>
   <div class="container blog-page">
+
+    <h1><?php wp_title( '' ); ?></h1>
+
     <?php
       if( have_posts() ) :
         while( have_posts() ) : the_post();
@@ -22,7 +25,6 @@
       <div class="meta-info">
         <p>Posted by: <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?></p>
         <p>Categories: <?php the_category( ', ' ); ?></p>
-        <p>Tags: <?php the_tags( '', ', ' ); ?></p>
       </div>
 
       <!-- Content -->

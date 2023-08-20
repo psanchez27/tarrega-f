@@ -109,3 +109,28 @@ footer{
   font-size: 1.6rem;
   margin-top: 1rem;
 }
+
+
+
+/* Blog page */
+.container.blog-page{
+  max-width: 1260px;
+  margin: auto;
+}
+.blog-page h1{
+ margin: 4rem 0;
+ font-size: 4rem;
+}
+
+.blog-page article{
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  transition: .2s ease-in-out;
+}
+
+.blog-page article:hover{
+  transform: scale(1.01);
+  box-shadow: 0px 2px 8px #b4b4b4;
+}
