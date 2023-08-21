@@ -169,18 +169,54 @@ footer{
 
 
 /* Individual post page */
-.container.post-page{
-  /* max-width: 1260px; */
-  /* margin: auto; */
-  /* padding: 4rem 2rem; */
+.main-post-content{
+  max-width: 1260px;
+  margin: auto;
+  padding: 4rem 2rem;
 }
 
 .title-container{
   background: #e4e4e4;
   width: 100vw;
+  padding: 4rem 2rem;
 }
 
 .container.post-page h1{
-  margin: 4rem 0;
   font-size: 3rem;
+  max-width: 1260px;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+
+.post-page .meta-info{
+  margin: 1rem 0 2rem;
+}
+
+.post-page p{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.post-page .comments-area{
+  margin: 4rem 0;
+}
+
+.post-page .comments-area {
+  font-size: 1rem;
+}
+
+.post-page .comments-area textarea{
+  font-size: 1rem;
+}
+
+.post-page .comments-area .form-submit input{
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.post-page .comments-area .form-submit input:hover{
+  cursor: pointer;
 }

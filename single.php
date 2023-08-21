@@ -14,27 +14,31 @@
         <h1><?php the_title(); ?></h1>
       </div>
 
-      <!-- Post Thumbnail -->
-      <div class="post-thumbnail">
-        <?php the_post_thumbnail( 'large' ); ?>
+      <div class="main-post-content">
+        <!-- Post Thumbnail -->
+        <div class="post-thumbnail">
+          <?php the_post_thumbnail( 'large' ); ?>
+        </div>
+
+        <!-- Meta info -->
+        <div class="meta-info">
+          <p>By: <?php the_author_posts_link(); ?> - <?php echo get_the_date(); ?> - <?php the_category( ', ' ); ?></p>
+        </div>
+
+        <!-- Content -->
+        <?php the_content(); ?>
+
+        <!-- Comment Section -->
+        <?php
+          if( comments_open() || get_comments_number() ) :
+            comments_template();
+          endif;
+        ?>
+
       </div>
-
-      <!-- Meta info -->
-      <div class="meta-info">
-        <p>By: <?php the_author_posts_link(); ?> - <?php echo get_the_date(); ?> - <?php the_category( ', ' ); ?></p>
-      </div>
-
-      <!-- Content -->
-      <?php the_content(); ?>
-
     </article>
 
-    <!-- Comment Section -->
-    <?php
-      if( comments_open() || get_comments_number() ) :
-        comments_template();
-      endif;
-    ?>
+    
 
     <!-- End the while loop -->
     <?php endwhile; ?>
