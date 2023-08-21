@@ -5,13 +5,15 @@
 
     <h1><?php wp_title( '' ); ?></h1>
 
-    <?php
+  <div class="post-list">
+
+  <?php
       if( have_posts() ) :
         while( have_posts() ) : the_post();
     ?>
 
     <!-- Individual article -->
-    <article>
+    <article class="post-list-item">
 
       <!-- Article title -->
       <h2><?php the_title(); ?></h2>
@@ -47,6 +49,10 @@
 
     <!-- End if the block that started the main loop -->
     <?php endif; ?>
+
+  </div>
+
+    
 
   </div>
 </main>
