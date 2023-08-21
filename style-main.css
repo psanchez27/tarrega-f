@@ -144,3 +144,15 @@ footer{
 .blog-page .post-list .post-list-item{
   flex: 0 45%;
 }
+
+.blog-page .post-list .post-list-item h2{
+  margin: 1rem 0;
+}
+
+.blog-page .post-list .post-list-item .meta-info a{
+  color: #000;
+}
+
+.blog-page .post-list .post-list-item .meta-info{
+  margin: 1rem 0;;
+}
