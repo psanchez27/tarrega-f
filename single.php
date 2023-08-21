@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-  <div class="content post-page">
+  <div class="container post-page">
     <?php
       while( have_posts() ) : the_post();
     ?>
@@ -10,7 +10,9 @@
     <article id="post-<?php the_id(); ?>" class="<?php post_class(); ?>">
   
       <!-- Post title -->
-      <h1><?php the_title(); ?></h1>
+      <div class="title-container">
+        <h1><?php the_title(); ?></h1>
+      </div>
 
       <!-- Post Thumbnail -->
       <div class="post-thumbnail">

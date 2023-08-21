@@ -16,7 +16,7 @@
     <article class="post-list-item">
 
       <!-- Article title -->
-      <h2><?php the_title(); ?></h2>
+      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
       <!-- Article thumbnail -->
       <div class="post-thumbnail">
@@ -26,11 +26,11 @@
       <!-- Article meta info -->
       <div class="meta-info">
         <p>Posted by: <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?></p>
-        <p>Categories: <?php the_category( ', ' ); ?></p>
+        <!-- <p>Categories: <?php the_category( ', ' ); ?></p> -->
       </div>
 
       <!-- Content -->
-      <?php the_excerpt(); ?>
+      <?php the_excerpt(); ?> <a href="<?php the_permalink(); ?>" class="post-list-readmore">Read More »</a>
 
     </article>
 

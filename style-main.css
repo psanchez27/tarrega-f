@@ -147,6 +147,12 @@ footer{
 
 .blog-page .post-list .post-list-item h2{
   margin: 1rem 0;
+  font-size: 1.8rem;
+}
+
+.blog-page .post-list .post-list-item h2 a{
+  color: #000;
+  text-decoration: none;
 }
 
 .blog-page .post-list .post-list-item .meta-info a{
@@ -155,4 +161,26 @@ footer{
 
 .blog-page .post-list .post-list-item .meta-info{
   margin: 1rem 0;;
+}
+.blog-page .post-list a.post-list-readmore{
+  color: #000;
+}
+
+
+
+/* Individual post page */
+.container.post-page{
+  /* max-width: 1260px; */
+  /* margin: auto; */
+  /* padding: 4rem 2rem; */
+}
+
+.title-container{
+  background: #e4e4e4;
+  width: 100vw;
+}
+
+.container.post-page h1{
+  margin: 4rem 0;
+  font-size: 3rem;
 }
