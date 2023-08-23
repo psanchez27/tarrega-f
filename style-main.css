@@ -113,16 +113,16 @@ footer{
 
 
 /* Blog page & Search results pages*/
-.container.blog-page, .container.search-page{
+.container.blog-page, .container.search-page, .container.archive-page{
   max-width: 1260px;
   margin: auto;
 }
-.blog-page h1, .search-page h1{
+.blog-page h1, .search-page h1, .archive-page h1{
  margin: 4rem 0;
  font-size: 4rem;
 }
 
-.blog-page article, .search-page article{
+.blog-page article, .search-page article, .archive-page article{
   padding: 1rem;
   margin: 1rem;
   border: 1px solid #e4e4e4;
@@ -130,7 +130,7 @@ footer{
   transition: .2s ease-in-out;
 }
 
-.blog-page article:hover, .search-page article:hover{
+.blog-page article:hover, .search-page article:hover, .archive-page article:hover{
   transform: scale(1.01);
   box-shadow: 0px 2px 8px #b4b4b4;
 }

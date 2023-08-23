@@ -1,22 +1,26 @@
 <?php get_header(); ?>
 
 <main>
-  <div class="continer">
+  <div class="container archive-page">
 
     <!-- Archive content -->
     <?php
       // Archive title
       the_archive_title( '<h1 class="archive-title">', '</h1>' );
+    ?>
 
+    <div class="post-list">
+
+    <?php
       // Start loop
       if( have_posts() ) :
         while( have_posts() ) : the_post();
     ?>
 
-    <article>
+    <article class="post-list-item">
 
       <!-- Post title -->
-      <h2><?php the_title(); ?></h2>
+      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
       <!-- Post thumbnail -->
       <div class="post-thumbnail">
@@ -25,13 +29,12 @@
 
       <!-- Meta info -->
       <div class="meta-info">
-        <p>Created by: <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?></p>
-        <p>Categories: <?php the_category( ', ' ); ?></p>
-        <p>Tags: <?php the_tags( '', ', ' ); ?></p>
-      </div>
+          <p>Posted by: <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?></p>
+          <!-- <p>Categories: <?php the_category( ', ' ); ?></p> -->
+        </div>
 
       <!-- Content -->
-      <?php the_excerpt(); ?>
+      <?php the_excerpt(); ?> <a href="<?php the_permalink(); ?>" class="post-list-readmore">Read More »</a>
 
     </article>
 
@@ -50,7 +53,8 @@
 
     <!-- End if block for the main loop -->
     <?php endif; ?>
-    
+
+    </div>
   </div>
 </main>
 
