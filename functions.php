@@ -38,3 +38,22 @@ function tarrega_config(){
 }
 
 add_action( 'after_setup_theme', 'tarrega_config' );
+
+
+
+//WP Sidebars
+function tarrega_sidebars(){
+  register_sidebar(
+    array(
+      'name' => 'Blog Post Sidebar',
+      'id' => 'blog-sidebar',
+      'description' => 'The sidebar for the individual post page.',
+      'before_widget' => '<div class="widget-wrapper">',
+      'after_widget' => '</div>',
+      'before_title' => '<h4 class="widgets-title">',
+      'after_title' => '</h4>'
+    )
+  );
+}
+
+add_action( 'widgets_init', 'tarrega_sidebars' );

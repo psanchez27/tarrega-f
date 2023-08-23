@@ -169,15 +169,16 @@ footer{
 
 
 /* Individual post page */
-.main-post-content{
+.main-post-content-wrapper{
   max-width: 1260px;
   margin: auto;
   padding: 4rem 2rem;
+  display: flex;
 }
 
 .title-container{
   background: #e4e4e4;
-  width: 100vw;
+  width: 100%;
   padding: 4rem 2rem;
 }
 
@@ -220,3 +221,15 @@ footer{
 .post-page .comments-area .form-submit input:hover{
   cursor: pointer;
 }
+
+
+
+/* Sidebar */
+.post-page .widget-wrapper ul li{
+  margin: 1rem 0;
+}
+.post-page .widget-wrapper ul li a{
+  color: #000;
+}
+
+

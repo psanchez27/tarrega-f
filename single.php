@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="post-page-container">
   <div class="container post-page">
     <?php
       while( have_posts() ) : the_post();
@@ -14,8 +14,9 @@
         <h1><?php the_title(); ?></h1>
       </div>
 
-      <div class="main-post-content">
-        <!-- Post Thumbnail -->
+      <div class="main-post-content-wrapper">
+        <div class="main-post-content">
+          <!-- Post Thumbnail -->
         <div class="post-thumbnail">
           <?php the_post_thumbnail( 'large' ); ?>
         </div>
@@ -34,6 +35,10 @@
             comments_template();
           endif;
         ?>
+        </div>
+
+      <!-- Sidebar -->
+      <?php get_sidebar( 'blog-sidebar' ); ?>
 
       </div>
     </article>
@@ -44,6 +49,7 @@
     <?php endwhile; ?>
 
   </div>
+
 </main>
 
 <?php get_footer(); ?>
