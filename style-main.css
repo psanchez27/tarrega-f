@@ -112,17 +112,17 @@ footer{
 
 
 
-/* Blog page */
-.container.blog-page{
+/* Blog page & Search results pages*/
+.container.blog-page, .container.search-page{
   max-width: 1260px;
   margin: auto;
 }
-.blog-page h1{
+.blog-page h1, .search-page h1{
  margin: 4rem 0;
  font-size: 4rem;
 }
 
-.blog-page article{
+.blog-page article, .search-page article{
   padding: 1rem;
   margin: 1rem;
   border: 1px solid #e4e4e4;
@@ -130,39 +130,39 @@ footer{
   transition: .2s ease-in-out;
 }
 
-.blog-page article:hover{
+.blog-page article:hover, .search-page article:hover{
   transform: scale(1.01);
   box-shadow: 0px 2px 8px #b4b4b4;
 }
 
-.blog-page .post-list{
+.post-list{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.blog-page .post-list .post-list-item{
+.post-list .post-list-item{
   flex: 0 45%;
 }
 
-.blog-page .post-list .post-list-item h2{
+.post-list .post-list-item h2{
   margin: 1rem 0;
   font-size: 1.8rem;
 }
 
-.blog-page .post-list .post-list-item h2 a{
+.post-list .post-list-item h2 a{
   color: #000;
   text-decoration: none;
 }
 
-.blog-page .post-list .post-list-item .meta-info a{
+.post-list .post-list-item .meta-info a{
   color: #000;
 }
 
-.blog-page .post-list .post-list-item .meta-info{
+.post-list .post-list-item .meta-info{
   margin: 1rem 0;;
 }
-.blog-page .post-list a.post-list-readmore{
+.post-list a.post-list-readmore{
   color: #000;
 }
 
