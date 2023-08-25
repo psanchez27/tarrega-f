@@ -34,7 +34,8 @@ $wp_customize->add_section(
   'sec_header',
   array(
     'title' => 'Header',
-    'description' => 'Customize the settings for your header'
+    'description' => 'Customize the settings for your header',
+    'priority' => 30
   )
 );
 
