@@ -57,6 +57,18 @@ nav ul li a{
   display: none;
 }
 
+/* Fixed header classes */
+.header.fixed{
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100vw;
+}
+
+.header.fixed.scrolled .header-main{
+  height: 65px;
+}
+
 
 
 /* Footer */

@@ -9,7 +9,7 @@
 <body <?php body_class(); ?>>
 
 <!-- Header Start -->
-<header>
+<header id="header" class="header fixed">
   <div class="header-main">
     <div class="branding">
       <!-- Logo or site title -->
