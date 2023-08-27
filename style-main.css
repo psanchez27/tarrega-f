@@ -8,6 +8,8 @@
   --dark-text-color: #000;
   --extra-color-1: #E9B384;
   --extra-color-2: #F4F2DE;
+  --heading-font: 'Poppins', sans-serif;
+  --paragraph-font: 'Poppins', sans-serif;
 }
 
 *{

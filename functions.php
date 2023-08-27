@@ -60,3 +60,19 @@ function tarrega_sidebars(){
 }
 
 add_action( 'widgets_init', 'tarrega_sidebars' );
+
+
+
+//Add css from customizer API
+function tarrega_customize_css(){ ?>
+
+<script>
+  console.log(<?php echo get_theme_mod( 'set_sticky_header' )
+ ?>);
+</script>
+
+
+  
+<?php }
+
+add_action( 'wp_head', 'tarrega_customize_css' );

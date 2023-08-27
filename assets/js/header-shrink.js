@@ -5,7 +5,7 @@ const header = document.getElementById('header')
 
 //Check scrolled position
 const checkPos = () => {
-  console.log('fixed')
+  // console.log('fixed')
 }
 
 // if header is fixed
