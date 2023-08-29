@@ -10,6 +10,9 @@ function tarrega_enqueue_scripts(){
   //load nain styles stysheet
   wp_enqueue_style( 'tarrega-main-styles', get_template_directory_uri() . '/style-main.css', array(), wp_get_theme()->get( 'version' ), 'all' );
 
+  //Load main scripts
+  wp_enqueue_script( 'tarrega-main-scripts', get_template_directory_uri() . '/assets/js/app.js', array(), wp_get_theme()->get( 'version' ), true );
+
   //Load fixed header script
   wp_enqueue_script( 'tarrega-fixed-header-script', get_template_directory_uri() . '/assets/js/header-shrink.js', array(), wp_get_theme()->get( 'version' ), true );
 }
