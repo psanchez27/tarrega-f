@@ -29,7 +29,7 @@ $wp_customize->add_control(
   )
 );
 
-//Fixed header option
+//Header section
 $wp_customize->add_section(
   'sec_header',
   array(
@@ -39,6 +39,7 @@ $wp_customize->add_section(
   )
 );
 
+//Setting for Fixed header
 $wp_customize->add_setting(
   'set_sticky_header',
   array(
@@ -56,6 +57,29 @@ $wp_customize->add_control(
     'type' => 'checkbox'
   )
 );
+
+//Settings for header banner text
+$wp_customize->add_setting(
+  'set_banner',
+  array(
+    'type' => 'theme_mod',
+    'default' => '',
+    'sanitize_callback' => 'sanitize_text_field'
+  )
+);
+
+$wp_customize->add_control(
+  'set_banner',
+  array(
+    'label' => 'Banner Alert',
+    'description' => 'Set an alert banner above the main header',
+    'section' => 'sec_header',
+    'type' => 'text'
+  )
+);
+
+//Settings for header banner styling
+
 
 }
 

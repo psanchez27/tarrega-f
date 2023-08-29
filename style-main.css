@@ -72,6 +72,15 @@ nav ul li a{
   height: 55px;
 }
 
+/* Header banner */
+.header-top{
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
 
 
 /* Footer */
