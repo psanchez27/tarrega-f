@@ -33,6 +33,7 @@ function tarrega_config(){
   add_theme_support( 'custom-logo' );
   add_theme_support( 'post-thumbnails' );
   add_theme_support( 'title-tag' );
+  // add_theme_support( 'editor-color-palette' );
 
   //Block editor support
   add_theme_support( 'responsive-embeds' );
@@ -63,16 +64,24 @@ add_action( 'widgets_init', 'tarrega_sidebars' );
 
 
 
-//Add css from customizer API
-function tarrega_customize_css(){ ?>
+//Add sticky header option for WP customizer API
+function tarrega_customize_css(){
+  //Check if sticky header option is enabled in the customizer
+  if ( get_theme_mod( 'set_sticky_header' )  == 1 ) : ?>
 
-<script>
-  console.log(<?php echo get_theme_mod( 'set_sticky_header' )
- ?>);
-</script>
+    <script>
+      header.classList.add('fixed')
+    </script>
+
+    <?php else : ?>
+
+    <script>
+      fixedHeader = document.getElementById('header')
+      header.classList.remove('fixed')
+    </script>
 
 
-  
-<?php }
+<?php endif;
+  }
 
-add_action( 'wp_head', 'tarrega_customize_css' );
+add_action( 'wp_footer', 'tarrega_customize_css' );

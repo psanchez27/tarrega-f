@@ -43,6 +43,7 @@ $wp_customize->add_setting(
   'set_sticky_header',
   array(
     'type' => 'theme_mod',
+    'default' => 0
   )
 );
 
