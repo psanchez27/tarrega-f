@@ -31,12 +31,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 55px;
-  /* transition: all .6s ease-in-out; */
+  height: 80px;
+  transition: .4s ease-in-out;
   padding: 1rem 5vw;
-}
-#header{
-  /* transition: .6s ease-in-out; */
 }
 .branding{
   font-size: 3em;
@@ -68,11 +65,10 @@ nav ul li a{
   top: 0;
   z-index: 99;
   width: 100vw;
-  /* transition: .5s ease-in-out; */
 }
 
+/* Shrink main header on scroll */
 .header.fixed.scrolled .header-main{
-  /* transition: .5s ease-in-out; */
   height: 55px;
 }
 
