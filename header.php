@@ -10,7 +10,10 @@
 
 <!-- Header Start -->
 <header id="header" class="header">
-  <div class="header-top"><?php echo get_theme_mod( 'set_banner', '' ); ?></div>
+<?php if ( !empty( get_theme_mod( 'set_banner') ) ) : ?>
+    <div class="header-top">
+      <?php echo get_theme_mod( 'set_banner', '' ); endif; ?>
+    </div>
   <div class="header-main">
     <div class="branding">
       <!-- Logo or site title -->

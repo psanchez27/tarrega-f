@@ -66,9 +66,9 @@ function tarrega_sidebars(){
 add_action( 'widgets_init', 'tarrega_sidebars' );
 
 
-
-//Add sticky header option for WP customizer API
+//Customizer API css options
 function tarrega_customize_css(){
+  //Sticky header styles
   //Check if sticky header option is enabled in the customizer
   if ( get_theme_mod( 'set_sticky_header' )  == 1 ) : ?>
 
@@ -84,7 +84,20 @@ function tarrega_customize_css(){
     </script>
 
 
-<?php endif;
-  }
+  <?php endif;
+
+
+
+  //Banner alert styles ?>
+
+  <style>
+    .header-top{
+      background-color: <?php echo get_theme_mod( 'set_banner_bg_color' ); ?>;
+      color: <?php echo get_theme_mod( 'set_banner_text_color' ); ?>;
+    }
+  </style>
+
+  <?php
+}
 
 add_action( 'wp_footer', 'tarrega_customize_css' );

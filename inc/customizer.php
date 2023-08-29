@@ -80,6 +80,47 @@ $wp_customize->add_control(
 
 //Settings for header banner styling
 
+//Background colors
+$wp_customize->add_setting(
+  'set_banner_bg_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#333',
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_banner_bg_color_control',
+    array(
+      'label' => "Background color",
+      'description' => 'Background color for banner alert',
+      'section' => 'sec_header',
+      'settings' => 'set_banner_bg_color'
+) ) );
+
+//Text color
+$wp_customize->add_setting(
+  'set_banner_text_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#fff'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_banner_text_color_control',
+    array(
+      'label' => 'Text Color',
+      'description' => 'Text color for banner alert',
+      'section' => 'sec_header',
+      'settings' => 'set_banner_text_color'
+    )
+  )
+);
 
 }
 
