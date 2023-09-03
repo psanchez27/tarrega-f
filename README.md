@@ -62,3 +62,66 @@ Tarrega requires specific versions of PHP and WordPress to work correctly. Ensur
 PHP Version: 7.2
 WordPress Version: 6.0
 Now that you've successfully installed Tarrega, configured essential settings, and imported demo content (if desired), you're ready to start building your website. The next sections of this documentation will guide you through theme customization, content creation, and advanced features to help you make the most of your WordPress website with Tarrega.
+
+Creating Pages
+In this section of the documentation, we will walk you through the process of creating and managing pages on your WordPress website using Tarrega. Pages are the foundation of your website's content, and with our theme, you have the flexibility to create a wide range of page layouts and designs.
+
+Using the Block Editor (Gutenberg)
+Tarrega is fully compatible with the WordPress block editor, also known as Gutenberg. This means you can create pages with rich, dynamic content using blocks. Here's how to create a new page:
+
+Log in to Your WordPress Dashboard: Go to http://yourwebsite.com/wp-admin/ and log in.
+
+Navigate to Pages: In the dashboard, go to "Pages" > "Add New."
+
+Enter a Title: Give your page a descriptive title in the "Add title" field.
+
+Add Blocks: To add content to your page, use the block editor's blocks. Click the "+" button to insert a block, then select the type of content you want to add, such as paragraphs, images, headings, or any other available blocks.
+
+Edit Block Content: Click on a block to edit its content. You can add text, images, videos, and more. Each block has its own settings and options that you can configure.
+
+Block Layout and Styling: Use the block editor's alignment and styling options to customize the appearance of your content.
+
+Preview and Publish: To see how your page looks, click the "Preview" button. If you're satisfied, click "Publish" to make the page live on your website.
+
+Creating and Editing Posts
+In addition to pages, you can also create and edit blog posts with Tarrega. Here's how to create a new blog post:
+
+Log in to Your WordPress Dashboard: Log in to your WordPress admin area.
+
+Navigate to Posts: In the dashboard, go to "Posts" > "Add New."
+
+Enter a Title: Give your blog post a title in the "Add title" field.
+
+Add Content: Use the block editor to create and format your blog post's content. You can add text, images, headings, and other blocks to make your post engaging.
+
+Categories and Tags: Assign categories and tags to your blog post to help organize and categorize your content.
+
+Featured Image: Set a featured image for your post. This image will appear as a thumbnail when your post is displayed on archive pages or in lists.
+
+Publish or Schedule: Choose to publish your post immediately or schedule it for a future date. Click "Publish" when you're ready.
+
+Setting Featured Images
+Featured images are often used to represent content, especially in blog posts and pages. Here's how to set a featured image:
+
+Edit or Create a Post/Page: Either edit an existing post/page or create a new one.
+
+Look for Featured Image Settings: In the block editor, you'll typically find the featured image settings in the sidebar or at the bottom of the content area.
+
+Select an Image: Click the "Set Featured Image" or similar button and choose an image from your media library or upload a new one.
+
+Crop and Set: If necessary, crop the image to fit the featured image dimensions. Once satisfied, click the "Set Featured Image" button.
+
+Update/Publish: Save or update your post/page to apply the featured image.
+
+Using Custom Page Templates
+Tarrega may include custom page templates that provide unique layouts and styles for specific types of pages. To use a custom page template:
+
+Edit or Create a Page: Navigate to "Pages" > "Add New" or edit an existing page.
+
+Look for Page Attributes: In the block editor, locate the "Page Attributes" section in the right sidebar.
+
+Select a Template: Under "Template," choose the desired custom page template from the dropdown list.
+
+Update/Publish: Save or update the page to apply the selected template.
+
+With these instructions, you can create and manage pages and posts on your WordPress website using Tarrega. Feel free to explore the various blocks and customization options available to create unique and engaging content for your site.
