@@ -122,6 +122,61 @@ $wp_customize->add_control(
   )
 );
 
+//Customize main theme colors
+
+$wp_customize->add_section(
+  'sec_colors',
+  array(
+    'title' => 'Colors',
+    'description' => 'Cusomtize your themes color swatch',
+    'priority' => 30
+  )
+);
+
+//Primary
+$wp_customize->add_setting(
+  'set_color_primary',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#A1CCD1'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_primary_color',
+    array(
+      'label' => 'Primary Color',
+      'description' => 'Primary color for theme',
+      'section' => 'sec_colors',
+      'settings' => 'set_color_primary'
+    )
+  )
+);
+
+//Secondary
+$wp_customize->add_setting(
+  'set_color_secondary',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#7C9D96'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_seconday_color',
+    array(
+      'label' => 'Secondary Color',
+      'description' => 'Secondary color for theme',
+      'section' => 'sec_colors',
+      'settings' => 'set_color_secondary'
+    )
+  )
+);
+
 }
 
 add_action( 'customize_register', 'tarrega_customizer' );
