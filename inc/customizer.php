@@ -1,12 +1,13 @@
 <?php
 
 function tarrega_customizer( $wp_customize ){
-// 1 copyright section
+// 1 Footer Section ****************************************************************************************
 $wp_customize->add_section(
-  'sec_copyright',
+  'sec_footer',
   array(
     'title' => 'Footer',
-    'description' => 'Footer Settings'
+    'description' => 'Footer Settings',
+    'priority' => 50
   )
 );
 
@@ -24,18 +25,67 @@ $wp_customize->add_control(
   array(
     'label' => 'Copyright Information',
     'description' => 'Please, type your copyright here',
-    'section' => 'sec_copyright',
+    'section' => 'sec_footer',
     'type' => 'text'
   )
 );
 
-//Header section
+// Customize footer colors
+
+// Footer background color
+$wp_customize->add_setting(
+  'set_footer_background_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#000'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_footer_background',
+    array(
+      'label' => 'Footer Background Color',
+      'description' => 'Set the footer background color',
+      'section' => 'sec_footer',
+      'settings' => 'set_footer_background_color'
+    )
+  )
+);
+
+// Footer text color
+$wp_customize->add_setting(
+  'set_footer_text_color',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#fff'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_footer_text',
+    array(
+      'label' => 'Footer Text Color',
+      'description' => 'Set the footer text color',
+      'section' => 'sec_footer',
+      'settings' => 'set_footer_text_color'
+    )
+  )
+);
+
+
+
+
+// 2 Header section ****************************************************************************************
 $wp_customize->add_section(
   'sec_header',
   array(
     'title' => 'Header',
     'description' => 'Customize the settings for your header',
-    'priority' => 30
+    'priority' => 40
   )
 );
 
@@ -122,7 +172,9 @@ $wp_customize->add_control(
   )
 );
 
-//Customize main theme colors
+
+
+// 3 Customize main theme colors ****************************************************************************************
 
 $wp_customize->add_section(
   'sec_colors',

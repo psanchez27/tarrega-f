@@ -65,7 +65,15 @@ function tarrega_sidebars(){
 add_action( 'widgets_init', 'tarrega_sidebars' );
 
 
-//Customizer API css options
+
+
+
+
+
+
+
+
+// Customizer API css options ********************************************************************************
 function tarrega_customize_css(){
   //Sticky header styles
   //Check if sticky header option is enabled in the customizer
@@ -83,18 +91,29 @@ function tarrega_customize_css(){
     </script>
 
 
-  <?php endif;
+  <?php endif; ?>
 
 
 
-  //Banner alert styles ?>
+  <!-- Banner alert styles  -->
 
   <style>
     .header-top{
       background-color: <?php echo get_theme_mod( 'set_banner_bg_color' ); ?>;
       color: <?php echo get_theme_mod( 'set_banner_text_color' ); ?>;
     }
+
+  /* Footer Style */
+    footer{
+      background-color: <?php echo get_theme_mod( 'set_footer_background_color' ); ?>;
+      color: <?php echo get_theme_mod( 'set_footer_text_color' ); ?>;
+    }
+    footer ul li a{
+      color: <?php echo get_theme_mod( 'set_footer_text_color' ); ?>;
+    }
+
   </style>
+
 
   <?php
 }
