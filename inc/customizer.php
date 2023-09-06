@@ -5,8 +5,8 @@ function tarrega_customizer( $wp_customize ){
 $wp_customize->add_section(
   'sec_copyright',
   array(
-    'title' => 'Copyright Settings',
-    'description' => 'Copyright Settings'
+    'title' => 'Footer',
+    'description' => 'Footer Settings'
   )
 );
 
