@@ -177,6 +177,138 @@ $wp_customize->add_control(
   )
 );
 
+//Primary Background
+$wp_customize->add_setting(
+  'set_color_primary_background',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#fff'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_primary_background_color',
+    array(
+      'label' => 'Primary Background Color',
+      'description' => 'Primary background color for theme',
+      'section' => 'sec_colors',
+      'settings' => 'set_color_primary_background'
+    )
+  )
+);
+
+//Secondary Background
+$wp_customize->add_setting(
+  'set_color_secondary_background',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#111'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_secondary_background_color',
+    array(
+      'label' => 'Secondary Background Color',
+      'description' => 'Secondary background color for theme',
+      'section' => 'sec_colors',
+      'settings' => 'set_color_secondary_background'
+    )
+  )
+);
+
+//Primary Text
+$wp_customize->add_setting(
+  'set_color_primary_text',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#000'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_primary_text_color',
+    array(
+      'label' => 'Primary Text Color',
+      'description' => 'Primary text color for theme',
+      'section' => 'sec_colors',
+      'settings' => 'set_color_primary_text'
+    )
+  )
+);
+
+//Secondary Text
+$wp_customize->add_setting(
+  'set_color_secondary_text',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#fff'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_secondary_text_color',
+    array(
+      'label' => 'Secondary Text Color',
+      'description' => 'Secondary text color for theme',
+      'section' => 'sec_colors',
+      'settings' => 'set_color_secondary_text'
+    )
+  )
+);
+
+//Extra Color 1
+$wp_customize->add_setting(
+  'set_color_extra_1',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#E9B384'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_extra_color_1',
+    array(
+      'label' => 'Extra Color 1',
+      'description' => 'Extra color for theme',
+      'section' => 'sec_colors',
+      'settings' => 'set_color_extra_1'
+    )
+  )
+);
+
+//Extra Color 2
+$wp_customize->add_setting(
+  'set_color_extra_2',
+  array(
+    'type' => 'theme_mod',
+    'default' => '#F4F2DE'
+  )
+);
+
+$wp_customize->add_control(
+  new WP_Customize_Color_Control(
+    $wp_customize,
+    'set_extra_color_2',
+    array(
+      'label' => 'Extra Color 2',
+      'description' => 'Extra color for theme',
+      'section' => 'sec_colors',
+      'settings' => 'set_color_extra_2'
+    )
+  )
+);
+
 }
 
 add_action( 'customize_register', 'tarrega_customizer' );
