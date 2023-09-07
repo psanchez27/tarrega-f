@@ -7,11 +7,11 @@ require get_template_directory() . '/inc/customizer.php';
 function tarrega_enqueue_scripts(){
   //load info stylesheet (style.css in root)
   wp_enqueue_style( 'tarrega-thee-info', get_stylesheet_uri(), array(), wp_get_theme()->get( 'version' ), 'all' );
-  //load font awesome stylesheet
-  wp_enqueue_style( 'tarrega-fontawesome-styles', get_template_directory_uri() . '/assets/fontawesome-free-6.4.2-web 2/css/all.min.css', array(), '6.4.2', 'all' );
   //load nain styles stysheet
   wp_enqueue_style( 'tarrega-main-styles', get_template_directory_uri() . '/style-main.css', array(  ), wp_get_theme()->get( 'version' ), 'all' );
 
+  //Load Font Awesome
+  wp_enqueue_script( 'fa', 'https://kit.fontawesome.com/f323f1d940.js', array(), '6.4.2' );
   //Load main scripts
   wp_enqueue_script( 'tarrega-main-scripts', get_template_directory_uri() . '/assets/js/app.js', array(), wp_get_theme()->get( 'version' ), true );
   //Load fixed header script
