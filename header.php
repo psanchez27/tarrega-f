@@ -28,7 +28,7 @@
     </div>
 
     <!-- Mobile menu toggle -->
-    <button id="mobile-menu-toggle" class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <button id="mobile-menu-toggle" class="mobile-menu-toggle"><i class="fa-solid fa-bars fa-lg"></i></button>
 
     <!-- Nav menu -->
     <nav id="main-menu" class="main-menu">

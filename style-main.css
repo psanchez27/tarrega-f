@@ -56,7 +56,7 @@ nav ul li a{
 }
 /* Mobile Menu */
 .mobile-menu-toggle{
-  display: none;
+  /* display: none; */
 }
 
 /* Fixed header classes */
