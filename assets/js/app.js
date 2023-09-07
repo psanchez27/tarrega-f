@@ -8,3 +8,12 @@ const fixedHeader = document.querySelector('.header.fixed')
 if(adminBar !== null){
   // fixedHeader.style.top = '32px' // or should we push the entire body down?
 }
+
+
+// Mobile menu show and hide
+const nav = document.getElementById('mobile-menu-toggle')
+const mainMenu = document.getElementById('main-menu')
+
+nav.addEventListener('click', () => {
+  mainMenu.classList.toggle('show-mobile-nav')
+})

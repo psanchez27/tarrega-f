@@ -35,6 +35,9 @@
   transition: .4s ease-in-out;
   padding: 1rem 5vw;
 }
+.header-main nav{
+  transition: .4s ease-in-out;
+}
 .branding{
   font-size: 3em;
 }
@@ -56,7 +59,35 @@ nav ul li a{
 }
 /* Mobile Menu */
 .mobile-menu-toggle{
-  /* display: none; */
+  display: none;
+  padding: 12px;
+}
+
+/* Resonsive mennu */
+@media only screen and (max-width: 820px){
+  .mobile-menu-toggle{
+    display: block;
+  }
+  .header-main nav{
+    position: fixed;
+    z-index: 99;
+    background-color: #222;
+    height: 100vh;
+    width: 400px;
+    top: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    margin-left: -100%;
+  }
+  .header-main nav.show-mobile-nav{
+    margin-left: 0;
+  }
+  .header-main nav ul{
+    flex-direction: column;
+  }
+  .header-main nav ul li{
+    margin: 1rem 0;
+  }
 }
 
 /* Fixed header classes */

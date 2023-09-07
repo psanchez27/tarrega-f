@@ -8,7 +8,7 @@ function tarrega_enqueue_scripts(){
   //load info stylesheet (style.css in root)
   wp_enqueue_style( 'tarrega-thee-info', get_stylesheet_uri(), array(), wp_get_theme()->get( 'version' ), 'all' );
   //load font awesome stylesheet
-  wp_enqueue_style( 'tarrega-fontawesome-styles', get_template_directory_uri() . '/assets/css/fontawesome.min.css', array(), '6.4.2', 'all' );
+  wp_enqueue_style( 'tarrega-fontawesome-styles', get_template_directory_uri() . '/assets/fontawesome-free-6.4.2-web 2/css/all.min.css', array(), '6.4.2', 'all' );
   //load nain styles stysheet
   wp_enqueue_style( 'tarrega-main-styles', get_template_directory_uri() . '/style-main.css', array(  ), wp_get_theme()->get( 'version' ), 'all' );
 
