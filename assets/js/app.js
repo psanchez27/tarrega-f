@@ -11,9 +11,11 @@ if(adminBar !== null){
 
 
 // Mobile menu show and hide
-const nav = document.getElementById('mobile-menu-toggle')
+const navToggle = document.getElementById('mobile-menu-toggle')
 const mainMenu = document.getElementById('main-menu')
 
-nav.addEventListener('click', () => {
+navToggle.addEventListener('click', () => {
   mainMenu.classList.toggle('show-mobile-nav')
+  navToggle.childNodes[0].classList.toggle('fa-bars')
+  navToggle.childNodes[0].classList.toggle('fa-times')
 })
