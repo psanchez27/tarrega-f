@@ -361,6 +361,35 @@ $wp_customize->add_control(
   )
 );
 
+
+
+//Customize Theme fonts *********************************************************************************************
+$wp_customize->add_section(
+  'sec_theme_fonts',
+  array(
+    'title' => 'Fonts',
+    'description' => 'Set your theme fonts',
+    'priority' => 30
+  )
+);
+
+$wp_customize->add_setting(
+  'set_theme_fonts',
+  array(
+    'type' => 'theme_mod',
+    'default' => 'Arial'
+  )
+);
+
+$wp_customize->add_control(
+  'set_theme_fonts',
+  array(
+    'label' => 'Main Font',
+    'description' => 'Set your theme\s main font',
+    'section' => 'sec_theme_fonts'
+  )
+);
+
 }
 
 add_action( 'customize_register', 'tarrega_customizer' );
