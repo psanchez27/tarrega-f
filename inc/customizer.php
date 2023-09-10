@@ -373,8 +373,9 @@ $wp_customize->add_section(
   )
 );
 
+//primary font
 $wp_customize->add_setting(
-  'set_theme_fonts',
+  'set_primary_fonts',
   array(
     'type' => 'theme_mod',
     'default' => 'Arial'
@@ -382,10 +383,28 @@ $wp_customize->add_setting(
 );
 
 $wp_customize->add_control(
-  'set_theme_fonts',
+  'set_primary_fonts',
   array(
-    'label' => 'Main Font',
-    'description' => 'Set your theme\s main font',
+    'label' => 'Primary Font',
+    'description' => 'Set your theme\s font for headers',
+    'section' => 'sec_theme_fonts'
+  )
+);
+
+//seconday font
+$wp_customize->add_setting(
+  'set_secondary_fonts',
+  array(
+    'type' => 'theme_mod',
+    'default' => 'Arial'
+  )
+);
+
+$wp_customize->add_control(
+  'set_secondary_fonts',
+  array(
+    'label' => 'Secondary Font',
+    'description' => 'Set your theme\s font for paragraphs',
     'section' => 'sec_theme_fonts'
   )
 );
