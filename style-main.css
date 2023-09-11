@@ -20,7 +20,10 @@
 }
 
 .container{
+  /* still nereded? */
   min-height: 100vh;
+
+  /* Should add width propery */
 }
 
 
