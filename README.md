@@ -125,3 +125,10 @@ Select a Template: Under "Template," choose the desired custom page template fro
 Update/Publish: Save or update the page to apply the selected template.
 
 With these instructions, you can create and manage pages and posts on your WordPress website using Tarrega. Feel free to explore the various blocks and customization options available to create unique and engaging content for your site.
+
+<!-- CHANGE LOG
+
+== 1.0.0
+* Initial setup of theme for official launch!!
+
+-->
