@@ -138,6 +138,12 @@ footer{
   display: flex;
 }
 
+.page-content-container p{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin: 1rem;
+}
+
 
 
 /* E404 page */
@@ -264,6 +270,7 @@ footer{
 .post-page p{
   font-size: 1.4rem;
   line-height: 1.8rem;
+  margin: 1rem;
 }
 
 .post-page .comments-area{
