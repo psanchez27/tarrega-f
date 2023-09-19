@@ -130,6 +130,16 @@ footer{
 
 
 
+/* General Pages */
+.page-content-container{
+  max-width: 1260px;
+  margin: auto;
+  padding: 4rem 2rem;
+  display: flex;
+}
+
+
+
 /* E404 page */
 .container.e404{
   padding: 4rem 2rem;
